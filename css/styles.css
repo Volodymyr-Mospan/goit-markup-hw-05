@@ -117,15 +117,13 @@ body {
   display: flex;
 }
 
-.site-nav .item {
-  position: relative;
-}
-
 .site-nav .item + .item {
   margin-left: 50px;
 }
 
 .site-nav .link {
+  position: relative;
+
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
