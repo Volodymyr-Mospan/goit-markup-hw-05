@@ -67,7 +67,7 @@
       <!-- Герой/основний банер -->
       <section class="hero">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="button">Замовити послугу</button>
+        <button type="button" class="button" data-modal-open>Замовити послугу</button>
       </section>
 
       <!-- Наші переваги / Особливості -->
@@ -367,12 +367,15 @@
         </div>
       </section>
 
-
-      <div class="backdrop">
-        <div class="modal"></div>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="button-cloosing" type="button" data-modal-close>
+            <svg class="icon-closing">
+              <use href="./images/icon.svg#icon-closing"></use>
+            </svg>
+          </button>
+        </div>
       </div>
-
-
     </main>
 
     <!-- Підвал -->
@@ -440,5 +443,17 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="button-cloosing" type="button" data-modal-close>
+          <svg class="icon-closing">
+            <use href="./images/icon.svg#icon-closing"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
