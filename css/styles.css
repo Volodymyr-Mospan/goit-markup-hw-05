@@ -752,8 +752,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  display: flex;
-  justify-content: flex-end;
 
   min-width: 528px;
   min-height: 581px;
@@ -775,6 +773,10 @@ body {
 }
 
 .modal .button-closing {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
   display: flex;
   justify-content: center;
   align-items: center;
